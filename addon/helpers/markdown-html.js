@@ -11,6 +11,12 @@ export function markdownHtml(params, hash) {
   let options = hash.options || {};
 
   let md = markdownit(options);
+
+  if ('plugins' in hash) {
+    hash.plugins.forEach( (plugin) => {
+      md = md.use(plugin);
+    });
+  }
   return htmlSafe(md.render(params[0]));
 }
 
