@@ -1,9 +1,11 @@
 {
   "name": "ember-cli-markdown-it",
-  "version": "0.0.2",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.3",
+  "description": "Ember addon that uses markdown-it",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "markdown",
+    "markdown-it"
   ],
   "license": "MIT",
   "author": "Marcus Renno",
