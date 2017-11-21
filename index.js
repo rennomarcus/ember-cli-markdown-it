@@ -19,7 +19,10 @@ module.exports = {
       srcDir: 'dist',
       destDir: 'markdownit'
     });
-    return new MergeTrees([vendorTree, markedTree]);
+    if (vendorTree){
+      return new MergeTrees([vendorTree, markedTree]);
+    }
+    return markedTree;
   },
 
   importDependencies(target) {
