@@ -1,26 +1,30 @@
 # ember-cli-markdown-it
 
-This README outlines the details of collaborating on this Ember addon.
+Ember addon that uses [markdown-it](https://github.com/markdown-it/markdown-it)
+to parse markdown language to html.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-cli-markdown-it`
-* `npm install`
+`ember install ember-cli-markdown-it`
 
-## Running
+## Usage
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+`{{markdown-html text options}}`
 
-## Running Tests
+Where
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+* text - string to be parsed by markdown-it
+* options - object to pass to markdown-it 
 
-## Building
+See the options and how they work in their [project here](https://github.com/markdown-it/markdown-it#init-with-presets-and-options)
 
-* `ember build`
 
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+## Issues/Suggestions
+If you have any question or suggestion, please open an issue.
+
+## Development
+* `git clone https://github.com/rennomarcus/ember-cli-markdown-it.git`
+* `ember s`
+
+## Tests
+* `ember test` or `ember s` and go to /tests

@@ -1,24 +1,27 @@
 {
   "name": "ember-cli-markdown-it",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Marcus Renno",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/rennomarcus/ember-cli-markdown-it",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.6.0"
+    "broccoli-funnel": "^2.0.1",
+    "broccoli-merge-trees": "^2.0.0",
+    "ember-cli-babel": "^6.6.0",
+    "markdown-it": "^8.4.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
