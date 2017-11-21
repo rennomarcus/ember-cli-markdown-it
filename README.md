@@ -34,7 +34,7 @@ to highlight some code syntax
           } else {
             codeValue = hljs.highlightAuto(str).value;
           }
-          return `<pre><code class="hljs ${lang}">${codeValue}</code</pre>`;
+          return `<pre><code class="hljs ${lang}">${codeValue}</code></pre>`;
         }
       }
     });
