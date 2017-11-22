@@ -9,16 +9,17 @@ to parse markdown language to html.
 
 ## Usage
 
-`{{markdown-html text options}}`
+`{{markdown-html text options plugins}}`
 
 Where
 
 * text - string to be parsed by markdown-it
-* options - object to pass to markdown-it 
+* options - object to pass to markdown-it
+* plugins - list of plugins
 
 See the options and how they work in their [project here](https://github.com/markdown-it/markdown-it#init-with-presets-and-options)
 
-Example of a component using [ember-highlightjs-shim](https://github.com/rennomarcus/ember-highlightjs-shim)
+#### Example of a component using [ember-highlightjs-shim](https://github.com/rennomarcus/ember-highlightjs-shim)
 to highlight some code syntax
 
     import Ember from 'ember';
@@ -42,6 +43,21 @@ to highlight some code syntax
 and then
 
     {{markdown-html "my content" options=markdownOptions}}
+
+#### Example of plugins
+
+    import Ember from 'ember';
+    import MarkdownItAttrs from "npm:markdown-it-attrs";
+    import MarkdownItEmoji from "npm:markdown-it-emoji";
+    
+    export default Ember.Component.extend({
+      markdownPlugins: [
+        MarkdownItAttrs,
+        MarkdownItEmoji
+      ]
+    });
+    
+    // {{markdown-html "my content" plugins=markdownPlugins}}
 
 ## Issues/Suggestions
 If you have any question or suggestion, please open an issue.
